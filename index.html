@@ -15,7 +15,10 @@
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#"><i class="bi bi-floppy2-fill"></i></a>
+      <a class="navbar-brand" href="#" aria-label="Van Hamlin Dev">
+        <i class="bi bi-floppy2-fill"></i>
+        <span class="visually-hidden">Van Hamlin Dev</span>
+      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -46,6 +49,7 @@
 
         <!-- Player Name Input -->
         <div class="input-group mb-3">
+          <label for="playerNameInput" class="visually-hidden">Player Name</label>
           <span class="input-group-text">Enter Your Name:</span>
           <input type="text" class="form-control" placeholder="Type your name here" id="playerNameInput" />
           <button class="btn btn-success" id="submitNameBtn">Submit</button>
@@ -59,7 +63,7 @@
       </div>
 
       <!-- Score Column -->
-      <div class="col-md-2 border border-2 bg-light text-center d-flex flex-column justify-content-center align-items-center">
+      <div class="col-md-2 border border-2 text-center d-flex flex-column justify-content-center align-items-center bg-dark text-info">
         <h5 class="mt-2">Score</h5>
         <p id="scoreDisplay" class="fs-4 fw-bold mb-2">0</p>
       </div>
